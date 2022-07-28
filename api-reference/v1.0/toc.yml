@@ -5052,6 +5052,18 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
+          - name: Protection levels
+            items:
+            - name: Authentication context class references
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+            - name: Create
+              href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Update
+              href: api/authenticationcontextclassreference-update.md
         - name: Cross-tenant access
           items:
           - name: Overview
