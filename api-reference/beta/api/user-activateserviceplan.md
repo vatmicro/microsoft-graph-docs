@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The **activateServicePlan** API is deprecated and will stop returning data on June 30, 2022.
+> The **activateServicePlan** API is deprecated and will stop returning data on September 30, 2022.
 
 Activate a service plan with a given `servicePlanId` and `skuId` for a given user.
 
@@ -22,11 +22,11 @@ Activate a service plan with a given `servicePlanId` and `skuId` for a given use
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-| :--- | :--- |
-| Delegated (work or school account) | Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not Supported. |
-| Application | Directory.ReadWrite.All |
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | Directory.ReadWrite.All                     |
 
 ## HTTP request
 
@@ -41,19 +41,19 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 
 ## Request headers
 
-| Name | Description |
-| :--- | :--- |
-| Authorization | Bearer {token}. Required. |
-| Content-Type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameter:
 
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
+| Parameter     | Type | Description                            |
+| :------------ | :--- | :------------------------------------- |
 | servicePlanId | Guid | PlanId of the ServicePlan to activate. |
-| skuId | Guid | SkuId of SKU the service plan is on. |
+| skuId         | Guid | SkuId of SKU the service plan is on.   |
 
 ## Response
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The **activateService** API is deprecated and will stop returning data on June 30, 2022.
+> The **activateService** API is deprecated and will stop returning data on September 30, 2022.
 
 Activate a service for an organization.
 
@@ -23,11 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 In order to activate a service for an organization the requestor needs to have the _Company Administrator_ role with the following permissions.
 
-|Permission type|Permissions (from least to most privileged)|
-| :--- | :--- |
-| Delegated (work or school account) | Directory.ReadWrite.All|
-| Delegated (personal Microsoft account) | Not Supported. |
-| Application | Directory.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | Directory.ReadWrite.All                     |
 
 
 ## HTTP request
@@ -41,20 +41,20 @@ POST /organization/{organizationId}/activateService
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of the [activateService](../resources/activateService.md) object.
 You must define **service** or (**servicePlanId** _and_ **skuId**) for this action to be valid.
 
-| Property         | Type         | Description                           |
-| ----------------- | ------------ | ------------------------------------- |
-| service| String | The name of the service to activate. |
-| servicePlanId | Guid | The plan identifier of the service plan to activate. |
-| skuId | Guid | The SKU identifier of the service plan. |
+| Property      | Type   | Description                                          |
+| ------------- | ------ | ---------------------------------------------------- |
+| service       | String | The name of the service to activate.                 |
+| servicePlanId | Guid   | The plan identifier of the service plan to activate. |
+| skuId         | Guid   | The SKU identifier of the service plan.              |
 
 ## Response
 
