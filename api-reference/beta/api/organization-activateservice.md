@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The **activateService** API is deprecated and will stop returning data on September 30, 2022.
+> The **activateService** API is deprecated and will stop returning data on October 15th, 2022.
 
 Activate a service for an organization.
 
